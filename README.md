@@ -40,13 +40,13 @@ verify its truth table in quartus using Verilog programming.
 Developed by: Thirugnanamoorthi.G
 Register Number: 212221230117
 
-## Half subtractor :
+ Half subtractor :
 module half_sub(output B,D, input x,y);
 assign D=x^y;
 assign B=~x&y;
 endmodule
 
-## Full subtractor :
+ Full subtractor :
 module full_sub(output B,D, input x,y,z);
 assign D=x^y^z;
 assign B=(~x&(y^z))|(y&z);
